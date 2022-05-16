@@ -4,3 +4,8 @@ const logScore = (score) => console.log('Score Over 65', score);
 
 // Iterate over the scores array using forEach.
 // Execute the logScores
+scores.forEach(value => {
+    if (value > 65){
+        logScore(value);
+    }
+})
