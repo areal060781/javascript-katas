@@ -16,4 +16,8 @@ function isPrime(number){
     return (accumulator == (number + 1)) ? true : false;
 }
 
-module.exports = { isPrime }
+function listPrimeNumbers(){
+
+}
+
+module.exports = { isPrime, listPrimeNumbers}
