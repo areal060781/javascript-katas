@@ -16,14 +16,14 @@ const {
 describe('getCharactersNames', () => {
     it('should return character names', () => {
         const actual = getCharactersNames(chars);
-        const expected = require('./expected_names');
+        const expected = require('./data/expected_names');
         expect(expected).to.deep.equal(actual);
     });
 });
 
 describe('printCharacterNames', () => {
     it('should print character names', () => {
-        const expected = require('./expected_names');
+        const expected = require('./data/expected_names');
         const consoleLogSpy = sinon.spy(console, 'log');
         printCharacterNames(chars);
         consoleLogSpy.restore();
@@ -35,7 +35,7 @@ describe('printCharacterNames', () => {
 describe('getNonHumanCharacters', () => {
     it('should return non-human characters', () => {
         const actual = getNonHumanCharacters(chars);
-        const expected = require('./expected_non_humans');
+        const expected = require('./data/expected_non_humans');
         expect(expected).to.deep.equal(actual);
     });
 });
@@ -43,7 +43,7 @@ describe('getNonHumanCharacters', () => {
 describe('getJerryInfo', () => {
     it('should return jerry info', () => {
         const actual = getJerryInfo(chars);
-        const expected = require('./jerry');
+        const expected = require('./data/jerry');
         expect(expected).to.deep.equal(actual);
     });
 });

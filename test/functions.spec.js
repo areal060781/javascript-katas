@@ -13,7 +13,7 @@ const {
     discountFunction,
     myObject
 } = require('../src/JS4SDET/functions.js');
-const {evenValues, oddValues, fullNames, expectedKeys} = require('./data');
+const {evenValues, oddValues, fullNames, expectedKeys} = require('./data/data.js');
 
 describe('sum', () => {
     it('should return 3 if passing 1 and 2', () => {
