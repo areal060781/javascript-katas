@@ -10,7 +10,7 @@ describe('Fetch method', () => {
   });
 
   beforeEach(() => {
-    responseJson = require('../src/JS4SDET/response.json');
+    responseJson = require('../src/JS4SDET/data/response.json');
   });
 
   it('should receive items', () => {
