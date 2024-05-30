@@ -31,6 +31,7 @@ const sendRequest = async () => {
     }
   } catch (e) {
     console.log(e);
+    throw e
   }
 };
 
@@ -77,6 +78,6 @@ const jsonParser = async () => {
 
 
 module.exports = {
-sendRequest,
-jsonParser
+  sendRequest,
+  jsonParser
 };
