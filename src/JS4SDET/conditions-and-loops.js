@@ -18,8 +18,7 @@ function taskA(x, y) {
 }
 
 function taskB(x, y) {
-  let z2 = y < 10 ? x + y : x * y;
-  return z2;
+  return y < 10 ? x + y : x * y;
 }
 
 /** Task: 2
