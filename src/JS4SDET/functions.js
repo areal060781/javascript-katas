@@ -46,13 +46,15 @@ function isOdd(n) {
  * console.log(getShortest(["one", "three", "four"])) // one
  */
 function getShortest(wordArray) {
-  shorttest = wordArray[0];
+  /*shorttest = wordArray[0];
   for (let word of wordArray) {
     if (word.length < shorttest.length) {
       shorttest = word;
     }
   }
-  return shorttest;
+  return shorttest;*/
+
+  return wordArray.reduce((prevValue, currValue) => prevValue.length < currValue.length ? prevValue : currValue);
 }
 
 /**
@@ -61,11 +63,13 @@ function getShortest(wordArray) {
  * console.log(getGoogle(5)) // gooooogle
  */
 function getGoogle(n) {
-  let o = '';
+  /*let o = '';
   for (let i = 0; i < n; i++) {
     o += 'o';
   }
-  return `g${o}gle`;
+  return `g${o}gle`;*/
+
+  return `g${"o".repeat(n)}gle`;
 }
 
 /**
@@ -97,11 +101,12 @@ function getUser(firstName = null, lastName = null, age = null) {
  */
 
 function getTotalPath(path) {
-  let totalDistance = 0;
+  /*let totalDistance = 0;
   for (let travel of path) {
     totalDistance += travel.distance;
   }
-  return totalDistance;
+  return totalDistance;*/
+  return path.reduce((prevValue, currValue) => prevValue + currValue.distance, 0)
 }
 
 /**
